@@ -1,0 +1,7 @@
+# Xcode junk
+xcuserdata/
+DerivedData/
+*.xcuserstate
+
+# Swift Package Manager junk
+.build/
