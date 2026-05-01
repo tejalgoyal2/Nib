@@ -1,17 +1,14 @@
-//
-//  NibApp.swift
-//  Nib
-//
-//  Created by Tejal Goyal on 2026-04-30.
-//
-
 import SwiftUI
 
 @main
 struct NibApp: App {
+    @State private var storage = StorageService()
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra("Nib", systemImage: "pencil.tip") {
+            ScratchpadView()
+                .environment(storage)
         }
+        .menuBarExtraStyle(.window)
     }
 }

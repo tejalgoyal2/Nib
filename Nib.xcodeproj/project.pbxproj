@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		295C1BD62FA413020095DCB9 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 295C1BD52FA413020095DCB9 /* KeyboardShortcuts */; };
+		295C1BD92FA413270095DCB9 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 295C1BD82FA413270095DCB9 /* MarkdownUI */; };
+		295C1BDC2FA413410095DCB9 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 295C1BDB2FA413410095DCB9 /* LaunchAtLogin */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		295C1BC62FA4104E0095DCB9 /* Nib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				295C1BDC2FA413410095DCB9 /* LaunchAtLogin in Frameworks */,
+				295C1BD62FA413020095DCB9 /* KeyboardShortcuts in Frameworks */,
+				295C1BD92FA413270095DCB9 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 			);
 			name = Nib;
 			packageProductDependencies = (
+				295C1BD52FA413020095DCB9 /* KeyboardShortcuts */,
+				295C1BD82FA413270095DCB9 /* MarkdownUI */,
+				295C1BDB2FA413410095DCB9 /* LaunchAtLogin */,
 			);
 			productName = Nib;
 			productReference = 295C1BC62FA4104E0095DCB9 /* Nib.app */;
@@ -94,6 +106,11 @@
 			);
 			mainGroup = 295C1BBD2FA4104E0095DCB9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				295C1BD42FA413020095DCB9 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				295C1BD72FA413270095DCB9 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				295C1BDA2FA413410095DCB9 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 295C1BC72FA4104E0095DCB9 /* Products */;
 			projectDirPath = "";
@@ -256,9 +273,20 @@
 				DEVELOPMENT_TEAM = WNFZV6934T;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,9 +316,20 @@
 				DEVELOPMENT_TEAM = WNFZV6934T;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -331,6 +370,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		295C1BD42FA413020095DCB9 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+		295C1BD72FA413270095DCB9 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+		295C1BDA2FA413410095DCB9 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		295C1BD52FA413020095DCB9 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 295C1BD42FA413020095DCB9 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		295C1BD82FA413270095DCB9 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 295C1BD72FA413270095DCB9 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+		295C1BDB2FA413410095DCB9 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 295C1BDA2FA413410095DCB9 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 295C1BBE2FA4104E0095DCB9 /* Project object */;
 }
